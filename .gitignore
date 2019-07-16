@@ -1,0 +1,17 @@
+# VS/MSBuild
+.vs/
+[Oo]bj/
+[Bb]in/
+*.user
+
+# NuGet/Paket
+packages/
+paket-files
+.paket/paket.targets
+.paket/Paket.Restore.targets
+.paket/load
+
+# WebSharper
+Scripts/
+
+.ionide
