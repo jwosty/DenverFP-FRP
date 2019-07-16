@@ -1,12 +1,13 @@
 ﻿namespace SampleApp
 
 open WebSharper
+open System
 
 module Server =
+    let reverseString (s: string) =
+        new string(Array.rev(s.ToCharArray()))
 
     [<Rpc>]
-    let DoSomething input =
-        let R (s: string) = System.String(Array.rev(s.ToCharArray()))
-        async {
-            return R input
-        }
+    let DoSomething input = async {
+        return reverseString input
+    }
