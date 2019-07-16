@@ -1,4 +1,4 @@
-namespace _291
+namespace SampleApp
 
 open System
 open Microsoft.AspNetCore
