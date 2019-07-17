@@ -2,6 +2,9 @@
 This project was the starting point Alan and I used in [our talk](https://www.meetup.com/denverfp/events/263198218/?comment_table_id=263045508&comment_table_name=reply) at the DenverFP meetup.
 It is a functional reactive web application template using F#, WebSharper, and .NET Core. This project is based on the `websharper-web` dotnet template for F#.
 
+## Getting Started
+All you have to do is clone this repo and run `dotnet restore`, and then start it up with `dotnet run`.
+
 ## Purpose
 Normally, you would just start a new project with `dotnet new websharper-web -lang f#`, but as of the time of this writing on July 16, 2019, is [currently broken](https://fpish.net/topic/Some/0/86609) and is an [open Websharper issue](https://github.com/dotnet-websharper/core/issues/1044).\*
 
