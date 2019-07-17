@@ -6,7 +6,7 @@ It is a functional reactive web application template using F#, WebSharper, and .
 All you have to do is clone this repo and run `dotnet restore`, and then start it up with `dotnet run`.
 
 ## Purpose
-Normally, you would just start a new project with `dotnet new websharper-web -lang f#`, but as of the time of this writing on July 16, 2019, is [currently broken](https://fpish.net/topic/Some/0/86609) and is an [open Websharper issue](https://github.com/dotnet-websharper/core/issues/1044).\*
+Normally, you would just start a new project with `dotnet new websharper-web -lang f#`, but as of the time of this writing on July 16, 2019, it's [broken](https://fpish.net/topic/Some/0/86609) and is an [open Websharper issue](https://github.com/dotnet-websharper/core/issues/1044).\*
 
 *\* If you're on Windows, it might actually be working, in which case you don't need this repo.*
 
@@ -20,6 +20,6 @@ This project uses a workaround as partially described [here](https://github.com/
 * `Remoting.fs`
   * Contains a remoting function that executes on the server side but can be called from the client side (internally using AJAX remoting mechanisms). It's only performing a string reversal for demonstration purposes; you can of course perform much more complicated server-side operations here.
 
-Note: The one tweak in functionality we made is to remove the `submit` button next to the text box from [the original template](https://github.com/dotnet-websharper/templates/blob/0baf2861df31658d7aa087273031ba200a2e655a/FSharp/ClientServer/Client.fs#L22), in order to demonstrate how reactive values continuously update. It's obviously not a good idea to use it how this project is using it, since every user keystroke in the input box causes a web request to the server. In real code, you'd want to use a submit button or to throttle the requests or something.
+Note: The one tweak in functionality we made is to remove the `submit` button next to the text box from [the original template](https://github.com/dotnet-websharper/templates/blob/0baf2861df31658d7aa087273031ba200a2e655a/FSharp/ClientServer/Client.fs#L22), in order to demonstrate how reactive values continuously update. It's obviously not a good idea to use it in that way, since every user keystroke in the input box ends up triggering a web request to the server. In real code, you'd want to use a submit button or to throttle the requests or something.
 
-*\* This link is old, but unfourtunately you can't link to particular headers in the 4.x documentation. Templates didn't change in 4.x AFAIK, though. If you want to find the 4.x documentation, first go [here](https://developers.websharper.com/docs/v4.x/fs), then in the left sidebar, navigate to Basics>Reactive&nbsp;HTML>HTML&nbsp;Templates.*
+*\* This link is old, but unfourtunately you can't link to particular headers in the 4.x documentation. However AFAIK, templates didn't change in 4.x. If you want to find the 4.x documentation, first go [here](https://developers.websharper.com/docs/v4.x/fs), then in the left sidebar, navigate to Basics>Reactive&nbsp;HTML>HTML&nbsp;Templates.*
